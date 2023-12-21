@@ -12,13 +12,13 @@ build: [
 install: ["dune" "install"]
 
 depends: [
-  "ocaml" { >= "4.05.0" }
+  "ocaml" { >= "4.05.0" & < "5.1" }
   "dune" { >= "1.0" }
   "menhir" {< "20201122"}
   "ANSITerminal"
   "fmt"
   "logs"
-  "mtime" {< "2.0.0"}
+  "mtime" {>= "1.0.0" & < "2.0.0"}
   "cmdliner" {< "1.1.0"}
   "cairo2"
   "yojson"

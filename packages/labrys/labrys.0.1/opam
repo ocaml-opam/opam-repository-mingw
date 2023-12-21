@@ -51,5 +51,5 @@ synopsis:
 extra-files: ["fix-dune.patch" "md5=06bd57d94ee9a58831c089c5074b5d29"]
 url {
   src: "https://github.com/kit-ty-kate/labrys/archive/0.1.tar.gz"
-  checksum: "md5=54b2a358d85e7cf528194a886509baa5"
+  checksum: "md5=a18d39762a27e18ff4548978536b8477"
 }

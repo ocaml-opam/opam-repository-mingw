@@ -11,12 +11,14 @@ build: [
 remove: [["rm" "-f" "%{bin}%/acpc" "%{bin}%/acpc_big" "%{bin}%/acpc_mol2tool"]]
 depends: [
   "ocaml"
-  "obuild"
+  "obuild" {build}
   "base-unix"
-  "batteries"
+  "batteries" {< "3.7"}
   "dolog" {= "0.6"}
   "vector3"
   "parmap"
+  "conf-gnuplot"
+  "conf-autoconf"
 ]
 install: [
   "cp"

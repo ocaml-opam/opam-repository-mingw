@@ -17,6 +17,7 @@ homepage: "https://opam.ocaml.org/"
 bug-reports: "https://github.com/ocaml/opam/issues"
 depends: [
   "ocaml" {((os != "win32" & >= "4.02.3") | (os = "win32" & >= "4.06.0")) &  < "5.0"}
+  "base-unix"
   "base-bigarray"
   "ocamlgraph"
   "re" {>= "1.5.0"}
@@ -43,3 +44,6 @@ opam 2.0 development libraries
 Small standard library extensions, and generic system interaction modules used
 by opam.
 """
+build-env: [
+  [CI = ""]
+]

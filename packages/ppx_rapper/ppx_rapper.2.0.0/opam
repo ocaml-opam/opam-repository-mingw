@@ -11,9 +11,10 @@ depends: [
   "dune" {>= "2.0.1"}
   "pg_query"
   "ppxlib"
+  "ppxlib" {with-test & < "0.31.1"}
   "base"
-  "caqti"
-  "caqti-lwt"
+  "caqti" {< "2.0.0~"}
+  "caqti-lwt" {< "2.0.0~"}
   "caqti-type-calendar" {with-test}
 ]
 build: [

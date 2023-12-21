@@ -32,7 +32,7 @@ manifests from solo5 ELF executables.
 """
 url {
   src:
-    "https://github.com/roburio/ocaml-solo5-elftool/releases/download/v0.2.0/solo5-elftool-0.2.0.tbz"
+    "https://github.com/robur-coop/ocaml-solo5-elftool/releases/download/v0.2.0/solo5-elftool-0.2.0.tbz"
   checksum: [
     "sha256=fb09e45777ed2aa49e0adb7e9ba974c8f15c6ff8fbee301bf0a16e2364906b83"
     "sha512=3eb434f1bce11e5f14708cb64a8bcc97d17656df3dadf53f398821fa2fb7354996d6ae064cff0b9c98143c6e41393ba2f273083f771bfaa98c6e62ef0053d288"

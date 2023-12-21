@@ -31,6 +31,9 @@ description: """
 Solver and Cudf interaction. This library is based on the Cudf and Dose
 libraries, and handles calls to the external solver from opam."""
 url {
-  src: "https://github.com/ocaml/opam/archive/2.0.0-beta.tar.gz"
-  checksum: "md5=f4f1794dbaa36ccc16f57d75ee775fdc"
+  src: "https://github.com/ocaml/opam/archive/2.0.0-beta2.tar.gz"
+  checksum: "md5=e27cfdb0b8c6f4c3133f983e4c50b7dd"
 }
+build-env: [
+  [CI = ""]
+]

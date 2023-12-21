@@ -24,6 +24,9 @@ depopts: [
   "conf-glade"
   "lablgl"
 ]
+conflicts: [
+  "conf-glade" {ocaml:version >= "5.0"}
+]
 patches: [
   "lablgldir.patch"
   "lablgtk-2.18.13.patch" {os = "win32"}

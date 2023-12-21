@@ -20,3 +20,7 @@ url {
   checksum: "md5=52cea3976a09e979395875f493c46f30"
 }
 patches: "ocamlscript-3.0.0.patch" {os = "win32"}
+extra-files: [
+  ["ocamlscript.install" "md5=93f5b87f6dfcf2ddca580fd6b506e3d6"]
+  ["ocamlscript-3.0.0.patch" "md5=807c0dd6d5ae4f785fe18ced7b4c2613"]
+]

@@ -29,3 +29,7 @@ patches: [
   "chatouille.patch"
   "herdtools7-7.54.patch" {os = "win32"}
 ]
+extra-files: [
+  ["chatouille.patch" "md5=70100117d5c43afc3cb8ce768e721c06"]
+  ["herdtools7-7.54.patch" "md5=f353ad2dd01c5afe3ef4185f285a511c"]
+]
