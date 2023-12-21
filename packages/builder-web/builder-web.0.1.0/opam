@@ -57,7 +57,7 @@ Produced binaries can be downloaded and executed.
 """
 url {
   src:
-    "https://github.com/roburio/builder-web/releases/download/v0.1.0/builder-web-v0.1.0.tbz"
+    "https://github.com/robur-coop/builder-web/releases/download/v0.1.0/builder-web-v0.1.0.tbz"
   checksum: [
     "sha256=aaf4964cb2f82bfd260cf501e5dd16629193c8f761b9bc7556bdf1e904dbfa19"
     "sha512=f5dadeccead601f0b230d8bdd4ddde842ce4e353dcf38eb317e33d4a8ee9adda9aaae642277c75b460331ace8075bdc41ce0130ab045c97410a5f40aa3ea384c"

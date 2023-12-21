@@ -42,7 +42,7 @@ Does not support vJournal components.
 """
 url {
   src:
-    "https://github.com/roburio/icalendar/releases/download/v0.1.1/icalendar-v0.1.1.tbz"
+    "https://github.com/robur-coop/icalendar/releases/download/v0.1.1/icalendar-v0.1.1.tbz"
   checksum: [
     "sha256=91b8c3cca9895b17c998cfd0acf178640ffaf99acc51ee70e37d73cb895cf57c"
     "sha512=8059f5ae7e130744b387380b3d47f1db1c526abdacacafd76fe0e4ab04e83afce40380475967aac10a31f677cba4abf3c9a2b55b6aafbf718a313ea58e31e50c"

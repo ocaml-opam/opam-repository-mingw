@@ -21,7 +21,7 @@ build: [
   [make "-j%{jobs}%" "states"]
 ]
 depends: [
-  "ocaml" {< "4.02.0"}
+  "ocaml" {>= "3.11.2" & < "4.02.0"}
   "camlp5" {< "8"}
   "ocamlbuild" {build}
   "num"
@@ -32,10 +32,10 @@ install: [make "install"]
 synopsis: "Formal proof management system"
 extra-files: [
   ["coq.install" "md5=90aa43dcd6bdeb615b19364fe1c72dfb"]
-  ["configure.patch" "md5=3cf02754d1bb3b1e0150fcb8afe6d9fd"]
-  ["CAML_LD_LIBRARY_PATH.patch" "md5=b847a835a7b5aa404b6f99acff66fec7"]
+  ["configure.patch" "md5=95c231681553311984dc0eaf1611b333"]
+  ["CAML_LD_LIBRARY_PATH.patch" "md5=e4ee7ff6d89c5bc32e8392faad13584e"]
 ]
 url {
-  src: "http://coq.inria.fr/distrib/V8.4pl2/files/coq-8.4pl2.tar.gz"
+  src: "https://coq-distrib.s3.fr-par.scw.cloud/V8.4pl2/files/coq-8.4pl2.tar.gz"
   checksum: "md5=7fd98da8db35a89b9718333a31af6153"
 }

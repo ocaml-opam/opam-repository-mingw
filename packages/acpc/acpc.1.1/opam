@@ -20,18 +20,14 @@ remove: [
 ]
 depends: [
   "ocaml"
-  "obuild"
+  "obuild" {build}
   "base-unix"
-  "batteries"
+  "batteries" {< "3.7"}
   "dolog" {= "0.6"}
   "vector3"
   "parmap"
   "conf-gnuplot"
   "conf-autoconf"
-]
-depexts: [
-  ["autoconf"] {os-distribution = "debian"}
-  ["autoconf"] {os-distribution = "ubuntu"}
 ]
 synopsis: "Chemoinformatics tool for ligand-based virtual screening"
 flags: light-uninstall

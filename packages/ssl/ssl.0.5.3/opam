@@ -24,7 +24,7 @@ depends: [
 patches: "patch-ocamlmakefile-ssl.0.5.3" {os = "win32"}
 conflicts: [
   "base-nnp"
-  "ocaml-option-nppchecker"
+  "ocaml-option-nnpchecker"
 ]
 synopsis: "Bindings for OpenSSL"
 authors: "Samuel Mimram <samuel.mimram@ens-lyon.org>"
