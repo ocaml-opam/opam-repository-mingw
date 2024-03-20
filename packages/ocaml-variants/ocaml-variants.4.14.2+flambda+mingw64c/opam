@@ -1,0 +1,34 @@
+opam-version: "2.0"
+synopsis: "OCaml 4.14.2 with flambda activated (mingw64)"
+description: "Sunset compatibility package - the compiler is built from source"
+maintainer: "platform@lists.ocaml.org"
+authors: "Xavier Leroy and many contributors"
+homepage: "https://ocaml.org"
+bug-reports: "https://github.com/fdopen/opam-repository-mingw/issues"
+dev-repo: "git+https://github.com/ocaml/ocaml"
+depends: [
+  "ocaml" {= "4.14.2" & post}
+  "base-unix" {post}
+  "base-bigarray" {post}
+  "base-threads" {post}
+]
+conflict-class: "ocaml-core-compiler"
+flags: compiler
+setenv: [
+  [OCAMLLIB = "%{prefix}%/lib/ocaml"]
+  [CAML_LD_LIBRARY_PATH = "%{lib}%/stublibs"]
+  [CC = "x86_64-w64-mingw32-gcc.exe"]
+  [CPP = "x86_64-w64-mingw32-cpp.exe"]
+]
+build: [
+  ["./configure" "--prefix=%{prefix}%" "--with-flexdll" "--host=x86_64-w64-mingw32" "--enable-flambda" "CC=x86_64-w64-mingw32-gcc" "CPP=x86_64-w64-mingw32-cpp"]
+  [make "SHELL=/bin/dash" "-j%{jobs}%" "world.opt"]
+]
+install: [
+  [make "SHELL=/bin/dash" "install"]
+  ["dash" "-exc" "echo \"%{lib}%/stublibs\"  >> \"%{lib}%/ocaml/ld.conf\""]
+]
+url {
+  src: "https://github.com/ocaml/ocaml/archive/refs/tags/4.14.2.tar.gz"
+  checksum: "sha512=61bfa7961aae02458210f10865a5703f7a50a9be2452379e820cf2dfac2c6037da553c31835145e50a776880bdeb2ec78cd7a3147d65f418e7b3e593534e8a04"
+}
