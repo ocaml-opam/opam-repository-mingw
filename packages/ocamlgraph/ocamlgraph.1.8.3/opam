@@ -43,6 +43,6 @@ extra-files: [
   ["install-findlib-dgraph.patch" "md5=8abfe8c655f17ce4a2b8530fe4783dba"]
 ]
 url {
-  src: "http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.3.tar.gz"
+  src: "https://github.com/backtracking/ocamlgraph/releases/download/v1.8.3/ocamlgraph-1.8.3.tar.gz"
   checksum: "md5=ad2dc42f74c77dae9302c40cf2b5ff86"
 }

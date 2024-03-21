@@ -19,7 +19,7 @@ depends: [
 install: [make "install"]
 synopsis: "BibTeX to HTML translator"
 url {
-  src: "http://www.lri.fr/~filliatr/ftp/bibtex2html/bibtex2html-1.99.tar.gz"
+  src: "https://github.com/backtracking/bibtex2html/releases/download/v-1-99/bibtex2html-1.99.tar.gz"
   checksum: "md5=85f8d617b13d34a552261b3fbb406a0f"
 }
 patches: "bibtex2html-1.99.patch" {os = "win32"}

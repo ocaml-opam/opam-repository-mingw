@@ -18,7 +18,7 @@ install: [
   [make "install" "XEN=%{mirage-xen:enable}%"]
 ]
 depends: [
-   "ocaml" {>= "4.02.3"}
+   "ocaml" {>= "4.02.3" & < "5.2"}
    "integers" { >= "0.3.0" }
    "ocamlfind" {build}
    "conf-pkg-config" {build}
@@ -56,6 +56,6 @@ url {
 }
 conflicts: [
   "mirage-xen" {>= "6.0.0"}
-  "ocaml-option-nnp"
+  "base-nnp"
   "ocaml-option-nnpchecker"
 ]
