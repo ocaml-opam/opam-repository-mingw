@@ -21,7 +21,7 @@ remove: [
   ["ocamlfind" "remove" "ctypes"]
 ]
 depends: [
-  "ocaml" {>= "4.01.0"}
+  "ocaml" {>= "4.01.0" & < "5.2"}
   "base-bytes"
   "integers" { < "0.3.0" }
   "ocamlfind" {build}
@@ -61,6 +61,6 @@ url {
 }
 conflicts: [
   "mirage-xen" {>= "6.0.0"}
-  "ocaml-option-nnp"
+  "base-nnp"
   "ocaml-option-nnpchecker"
 ]

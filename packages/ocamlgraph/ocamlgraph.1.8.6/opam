@@ -43,6 +43,6 @@ extra-files: [
   "ocamlgraph-1.8.6.patch" "md5=75e0c969d5701eb828d88d698a9227e0"
 ]
 url {
-  src: "http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.6.tar.gz"
+  src: "https://github.com/backtracking/ocamlgraph/releases/download/v186/ocamlgraph-1.8.6.tar.gz"
   checksum: "md5=afbc24f0e0eb72c2d3eda64b68513e73"
 }
